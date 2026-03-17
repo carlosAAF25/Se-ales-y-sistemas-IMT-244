@@ -40,7 +40,8 @@ plt.grid(True)
 
 
 plt.subplot(4,1,4)
-plt.plot(f_positivas, magnitud, color='green', linewidth=2)
+plt.stem(f_positivas, magnitud, linefmt='green', markerfmt='go', basefmt=" ")
+# plt.plot(f_positivas, magnitud, color='green', linewidth=2)
 plt.title("Espectro de Frecuencias (FFT)")
 plt.xlabel("Frecuencia [Hz]")
 plt.ylabel("Amplitud")
